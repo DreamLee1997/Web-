@@ -1,0 +1,142 @@
+<!doctype html> 
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="购物通" http-equiv="keywords">
+<meta name="description" content="购物通">
+<meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1">
+<title>购物通</title>
+<link rel="stylesheet" href="css/index.css" type="text/css">
+<link rel="stylesheet" href="css/zy.css" type="text/css">
+<link rel="stylesheet" href="css/swiper.min.css" type="text/css">
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>  
+</head>
+<body>
+
+<!--页面内容
+<div id="yemnr">--> 
+<!--头部--> 
+<div class="toub_beij toub_beij_zy">
+	<div class="zhongj_k zhongj_k_z">
+		<div class="jiu_feo">
+			<div class="logo_k logo_k_fanh"><a href="GeRenZhongXin.html"><img class="fanh_ann" src="images/web/fanh.png"></a></div>
+			<div class="zhongjain_daoh">
+				<ul>
+					<li><a class="zyyge">评价晒单</a></li>  
+				</ul>
+			</div>
+		</div>
+		<div class="dengl">
+			<div class="caid_img" id="zhu_caid"><img src="images/web/cd_1.png"></div>
+			<ul class="zhu_daoh" id="daoh_lb">
+				<em></em>
+				<li><a href="index.html">首页</a></li>
+				<li><a href="wangid_ShangP_FenL.html">商品分类</a></li>
+				<li><a href="#">扫一扫</a></li>
+				<li><a href="wanagid_GouWuChe.html">购物车</a></li>
+				<li class="wu"><a href="GeRenZhongXin.html">我的通城</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	//滑动头部透明（针对首页头部用）
+	window.onscroll=function(){
+
+	var autoheight=document.body.scrollTop||document.documentElement.scrollTop;
+	if(autoheight>10){
+		$(".toub_beij").css("position" ,"fixed")
+		}else{
+			$(".toub_beij").css("position" ,"relative")
+		}
+	}
+</script>
+<!--内容-->
+
+<div class="gouwuc_kk gouwuc_kk_jies gouwuc_kk_pjsd">
+ 	<ul>
+ 		<li> 
+ 			<div class="diannao_shanp"> 
+ 				<a href="XiangQ_Y.html"><h1><img src="images/web/001.jpg"></h1></a>
+ 				<div class="you">
+ 					<p class="text_bt">评分</p>
+ 					<div class="pj_xx">
+ 						<p class="no"></p>
+ 						<p class="no"></p>
+ 						<p class="no"></p>
+ 						<p></p>
+ 						<p></p>
+ 					</div>
+ 				</div>
+ 			</div> 
+ 		</li>
+ 	</ul>
+</div>
+<div class="pjnr_txt">
+	<textarea  placeholder="输入内容"></textarea>
+	<span>最多可以填写500个字符</span>
+</div>
+<div class="saitu">
+	<ul>
+		<li><img src=""></li>
+	</ul>
+	<div>
+		<input type="file" id="btn_file" style="display:none">
+		<div class="shangc" onclick="F_Open_dialog()">
+			<h1><img src="images/web/shantu_img.png"></h1>
+			<p>嗮图</p>
+		</div>
+		<h1 class="wenz_you">共<em>0</em>张图片还能上传<em>9</em>张！</h1>
+	</div>
+</div>
+<div class="nimingfab">
+	<input type="radio" name="">
+	匿名发表
+</div>
+<div class="zuihann">
+	<div class="shouh_dange_beijin dk"><a href="#">确 认</a></div>
+</div>
+
+<!--底部-->
+ <script type="text/javascript">
+	function F_Open_dialog() 
+	{ 
+	document.getElementById("btn_file").click(); 
+	}
+</script> 
+<!--底部导航-->
+<!---->
+ 
+<!--大框div
+</div>-->
+
+<!--搜索页面--> 
+</body>
+</html>
+
+<script type="text/javascript">
+	window.onload=function(){ 
+		var TheMenu=document.getElementById('zhu_caid');
+		var LieBiao=document.getElementById('daoh_lb'); 
+		var Html=document.getElementsByTagName("html")[0];//0 第一个数组
+		TheMenu.onclick=function(event)
+		{
+			if (LieBiao.style.display=='block')
+			{
+				LieBiao.style.display='none';
+			}
+			else {
+				LieBiao.style.display='block';
+			}  
+			event.stopPropagation();//阻止冒泡事件
+		} 
+		Html.onclick=function(){
+			LieBiao.style.display='none';
+		}
+
+		// 
+		 
+ };
+ 
+</script>

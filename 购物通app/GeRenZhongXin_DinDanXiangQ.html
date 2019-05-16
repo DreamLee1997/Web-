@@ -1,0 +1,167 @@
+<!doctype html> 
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="购物通" http-equiv="keywords">
+<meta name="description" content="购物通">
+<meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1">
+<title>购物通</title>
+<link rel="stylesheet" href="css/index.css" type="text/css">
+<link rel="stylesheet" href="css/zy.css" type="text/css">
+<link rel="stylesheet" href="css/swiper.min.css" type="text/css">
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>  
+</head>
+<body>
+
+<!--页面内容
+<div id="yemnr">--> 
+<!--头部--> 
+<div class="toub_beij toub_beij_zy">
+	<div class="zhongj_k zhongj_k_z">
+		<div class="jiu_feo">
+			<div class="logo_k logo_k_fanh"><a href="GeRenZhongXin.html"><img class="fanh_ann" src="images/web/fanh.png"></a></div>
+			<div class="zhongjain_daoh">
+				<ul>
+					<li><a class="zyyge">用户信息</a></li>  
+				</ul>
+			</div>
+		</div>
+		<div class="dengl">
+			<div class="caid_img" id="zhu_caid"><img src="images/web/cd_1.png"></div>
+			<ul class="zhu_daoh" id="daoh_lb">
+				<em></em>
+				<li><a href="index.html">首页</a></li>
+				<li><a href="wangid_ShangP_FenL.html">商品分类</a></li>
+				<li><a href="#">扫一扫</a></li>
+				<li><a href="wanagid_GouWuChe.html">购物车</a></li>
+				<li class="wu"><a href="GeRenZhongXin.html">我的通城</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	//滑动头部透明（针对首页头部用）
+	window.onscroll=function(){
+
+	var autoheight=document.body.scrollTop||document.documentElement.scrollTop;
+	if(autoheight>10){
+		$(".toub_beij").css("position" ,"fixed")
+		}else{
+			$(".toub_beij").css("position" ,"relative")
+		}
+	}
+</script>
+<!--内容-->  
+<div class="shez_toux">
+	<div class="toux_img">
+		<p class="yiwanc">已完成</p>
+	</div>
+	<div class="dd_xiangq_sp_k">
+		<dl>
+			<dt>
+				<i></i>
+				<p><a href="#">鼎力电脑专营店</a></p>
+				<p><a href="#" class="lianx">联系客服 </a></p>
+				<span>共1件商品</span>
+			</dt>
+			<dd>
+				<a href="#">
+					<h1><img src="images/web/ddxq_img.jpg"></h1>
+					<div class="wenz">
+						<p>联想（Lenovo）IdeaPad 7.3英寸超极本电脑(i3)</p>
+						<span>13.3英寸</span>
+					</div>
+				</a>
+				<div class="ddxq_jiaq">
+					<p>¥29.90</p>
+					<span>x1</span>
+				</div>
+			</dd>
+		</dl>
+	</div>
+	<div class="min_xi">
+		<p><em>商品金额：</em>¥35.90 （在线支付）</p>
+		<p><em>收货地址：</em>贵州贵阳市云岩区城区下合群路达亨大厦1606</p>
+		<p><em>收货人：</em>潘中全 182****0710</p>
+		<p><em>配送方式：</em>神风快递  64000550114</p>
+		<p><em>邮箱：</em>223***788@qq.com</p>
+		<p><em>送货时间：</em>2017-10-26 星期四</p>
+		<p><em>发票信息：</em>电子发票个人明细</p>
+	</div>
+	<div class="zuizong_jies">
+		<p><em>商品总额</em><span>¥29.90</span></p>
+		<p><em>返现</em><span>¥0.00</span></p>
+		<p><em>运费</em><span>¥0.00</span></p> 
+	</div>
+	<div class="xiangq_liang_ann">
+		<a href="GeRenZhongXin_ShenQingShouHou.html">申请售后</a>
+		<a href="#" class="sc">删除订单</a>
+	</div>
+</div>
+ 
+<script>
+	var calendar = new lCalendar(); 
+	calendar.init({
+		'trigger': '#demo1',
+		'type': 'date'
+	}); 
+</script>
+<!--底部-->
+<div class="dib_bj">
+	 
+	<div class="liange_bb">
+		<div class="bb">
+			<a href="#">
+				<div class="bb_img"><img src="images/web/chupb.png"></div>
+				<p>触屏版</p>
+			</a>
+		</div>
+		<div class="bb">
+			<a href="#">
+				<div class="bb_img"><img src="images/web/diannb.png"></div>
+				<p class="diann_color">电脑版</p>
+			</a>
+		</div>
+	</div> 
+	<div class="gs_beian">
+		<p>京公网安备：11010602030054号</p>
+		<p>京ICP备：14012449号 黔ICP证：B2-20140009号</p>
+	</div>
+</div>
+
+<!--底部导航-->
+<!---->
+ 
+<!--大框div
+</div>-->
+
+<!--搜索页面--> 
+</body>
+</html>
+
+<script type="text/javascript">
+	window.onload=function(){ 
+		var TheMenu=document.getElementById('zhu_caid');
+		var LieBiao=document.getElementById('daoh_lb'); 
+		var Html=document.getElementsByTagName("html")[0];//0 第一个数组
+		TheMenu.onclick=function(event)
+		{
+			if (LieBiao.style.display=='block')
+			{
+				LieBiao.style.display='none';
+			}
+			else {
+				LieBiao.style.display='block';
+			}  
+			event.stopPropagation();//阻止冒泡事件
+		} 
+		Html.onclick=function(){
+			LieBiao.style.display='none';
+		}
+
+		// 
+		 
+ };
+ 
+</script>

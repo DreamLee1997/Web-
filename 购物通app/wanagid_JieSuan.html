@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="购物通" http-equiv="keywords">
+<meta name="description" content="购物通">
+<meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1">
+<title>购物通</title>
+<link rel="stylesheet" href="css/index.css" type="text/css">
+<link rel="stylesheet" href="css/zy.css" type="text/css">
+<link rel="stylesheet" href="css/swiper.min.css" type="text/css">
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>  
+</head>
+<body> 
+<!--页面内容
+<div id="yemnr">--> 
+<!--头部--> 
+<div class="toub_beij toub_beij_zy">
+	<div class="zhongj_k zhongj_k_z">
+		<div class="jiu_feo">
+			<div class="logo_k logo_k_fanh"><a href="#"><img class="fanh_ann" src="images/web/fanh.png"></a></div>
+			<div class="zhongjain_daoh">
+				<ul>
+					<li><a class="zyyge">确认订单</a></li>  
+				</ul>
+			</div>
+		</div> 
+	</div>
+</div>
+<script type="text/javascript">
+	//滑动头部透明（针对首页头部用）
+	window.onscroll=function(){
+
+	var autoheight=document.body.scrollTop||document.documentElement.scrollTop;
+	if(autoheight>10){
+		$(".toub_beij").css("position" ,"fixed")
+		}else{
+			$(".toub_beij").css("position" ,"relative")
+		}
+	}
+</script>
+<!--内容-->
+<div class="jie_diz">
+	<a href="ShouHuoDiZhi.html">
+		<p>李想 199*****772</p>
+		<p class="p">浙江省杭州市江干区下沙白杨街道浙江理工大学生活三区B3W140 <i></i></p>
+	</a>
+</div>
+<div class="caix"></div>
+<div class="gouwuc_kk gouwuc_kk_jies">
+ 	<ul>
+ 		<li> 
+ 			<div class="diannao_shanp"> 
+ 				<a href="XiangQ_Y.html"><h1><img src="images/web/001.jpg"></h1></a>
+ 				<div class="you">
+ 					<a href="XiangQ_Y.html"><p class="px24 bt">联想（Lenovo）IdeaPad 710S-13 13.3英寸超极本电脑(i5/....</p></a>
+ 					<p class="xh">i5/8G内存/128固态/金色</p>
+ 					<div class="youjfy">
+						<div class="goum_sl">
+							<p class="px26 jiaq">￥6588.00</p>
+							<div class="counter_box">
+								<i class="jian">-</i>
+								<input type="text" value="1">
+								<i class="jia">+</i>
+							</div>
+						</div>
+ 					</div> 
+ 				</div>
+ 			</div> 
+ 		</li>
+ 	</ul>
+</div>
+<div class="peis_xz">
+	<div class="kuaid"><a href="PeiShon_XuanZe.html"><p>配送方式</p><span>申通快递<i></i></span></a></div>
+	<div class="kuaid"><a href="#"><p>发票信息</p><span>电子发票明细<i></i></span></a></div>
+</div>
+<div class="zhifu_fangs">
+	<h1>支付方式</h1>
+	<ul id="oul">
+		<li class="no">在线支付</li>
+		<li>货到付款</li>
+	</ul>
+</div>
+<div class="gei_shangj_ly">
+	<h1>给商家留言：</h1>
+	<input type="text" name="" placeholder="请您留言">
+</div>
+<div class="jies_qian">
+	<div class="shangpjis">
+		<h1>商品总计</h1>
+		<p>
+			<em>x1</em>
+			<span>¥6588.00</span>
+		</p> 
+	</div>
+	<div class="shangpjis">
+		<h1>运费</h1>
+		<p> 
+			<span>¥00.00</span>
+		</p> 
+	</div>
+
+</div>
+
+
+
+<!--底部导航-->
+<!---->
+<div class="dib_daoh_b">
+	<div class="gouwuc_ gouwuc_yem jiesy"> 
+		<div class="zhong"><p>总计：<em>￥6588.00</em></p></div>
+		<div class="you">
+			<div class="goum">
+				<a href="wanagid_JieSuan.html">提交订单</a>  
+			</div>
+		</div>
+	</div>
+</div>
+<!--大框div
+</div>-->
+<!--搜索页面--> 
+</body>
+</html>
+
+<script type="text/javascript">
+	window.onload=function(){ 
+		 var oUl=document.getElementById('oul');
+		 var oXunHuan=oUl.getElementsByTagName('li')
+		 for (var i=0; i<oXunHuan.length; i++)
+		 {
+		 	oXunHuan[i].onclick=function()
+		 	{
+		 		 for (var i=0; i<oXunHuan.length; i++) 
+		 		 {
+		 		 	oXunHuan[i].className='';
+		 		 }
+		 		 this.className='no';
+		 	}
+		 }
+ };
+ 
+</script> 

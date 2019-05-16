@@ -1,0 +1,416 @@
+<!doctype html> 
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="购物通" http-equiv="keywords">
+<meta name="description" content="购物通">
+<meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1">
+<title>购物通</title>
+<link rel="stylesheet" href="css/index.css" type="text/css">
+<link rel="stylesheet" href="css/zy.css" type="text/css">
+<link rel="stylesheet" href="css/swiper.min.css" type="text/css">
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>  
+</head>
+<body>
+
+<!--页面内容
+<div id="yemnr">--> 
+<!--头部--> 
+<div class="toub_beij toub_beij_zy">
+	<div class="zhongj_k zhongj_k_z">
+		<div class="jiu_feo">
+			<div class="logo_k logo_k_fanh"><a href="XuanZeChengShi.html" class="guiyang_dd"><em>杭州</em></a></div>
+			<div class="zhongjain_daoh">
+				<ul>
+					<li><a class="zyyge">本地生活</a></li>  
+				</ul>
+			</div>
+		</div>
+		<div class="dengl">
+			<div class="caid_img" id="zhu_caid"><img src="images/web/cd_1.png"></div>
+			<ul class="zhu_daoh" id="daoh_lb">
+				<em></em>
+				<li><a href="index.html">首页</a></li>
+				<li><a href="wangid_ShangP_FenL.html">商品分类</a></li>
+				<li><a href="#">扫一扫</a></li>
+				<li><a href="wanagid_GouWuChe.html">购物车</a></li>
+				<li class="wu"><a href="GeRenZhongXin.html">我的通城</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	//滑动头部透明（针对首页头部用）
+	window.onscroll=function(){
+
+	var autoheight=document.body.scrollTop||document.documentElement.scrollTop;
+	if(autoheight>10){
+		$(".toub_beij").css("position" ,"fixed")
+		}else{
+			$(".toub_beij").css("position" ,"relative")
+		}
+	}
+</script>
+<!--内容-->  
+<div class="bd_sh_zuis">
+	 <!-- Swiper -->
+    <div class="swiper_container_bd">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+            	<a href="#">
+            		<div class="neir">
+            			<h1><img src="images/web/bd_img_1.jpg"></h1>
+            			<p><span>四川香天下</span><em>￥215.00</em></p>
+            		</div>
+            	</a>
+            </div>
+            <div class="swiper-slide">
+            	<a href="#">
+            		<div class="neir">
+            			<h1><img src="images/web/bd_img_2.jpg"></h1>
+            			<p><span>章无忌烤鱼</span><em>￥198.00</em></p>
+            		</div>
+            	</a>
+            </div>
+            <div class="swiper-slide">
+            	<a href="#">
+            		<div class="neir">
+            			<h1><img src="images/web/bd_img_1.jpg"></h1>
+            			<p><span>正宗东北菜</span><em>￥125.00</em></p>
+            		</div>
+            	</a>
+            </div>
+            <div class="swiper-slide">
+            	<a href="#">
+            		<div class="neir">
+            			<h1><img src="images/web/bd_img_2.jpg"></h1>
+            			<p><span>胖哥俩肉蟹煲</span><em>￥158.00</em></p>
+            		</div>
+            	</a>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper_pagination_bd"></div>
+    </div>
+ 
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper_container_bd', {
+        pagination: '.swiper_pagination_bd',
+        slidesPerView: 2,
+        slidesPerColumn: 1,
+        paginationClickable: true,
+        spaceBetween: 1,
+
+    });
+    // 宽高比为196:288
+	$(function(){
+		var img_w3=$(".swiper_container_bd .neir img").width()
+		var img_h2=img_w3*196/288
+		$(".swiper_container_bd .neir img").css("height",img_h2)
+	})
+    </script> 
+</div>
+<div class="daohang_bd">
+	<ul>
+		<li>
+			<a href="#">
+				<h1><img src="images/web/bd_tub1.png"></h1>
+				<p>美食</p>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<h1><img src="images/web/bd_tub2.png"></h1>
+				<p>酒店</p>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<h1><img src="images/web/bd_tub3.png"></h1>
+				<p>周边游</p>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<h1><img src="images/web/bd_tub4.png"></h1>
+				<p>KTV</p>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<h1><img src="images/web/bd_tub5.png"></h1>
+				<p>教育培训</p>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<h1><img src="images/web/bd_tub6.png"></h1>
+				<p>医疗服务</p>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<h1><img src="images/web/bd_tub7.png"></h1>
+				<p>丽人</p>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<h1><img src="images/web/bd_tub8.png"></h1>
+				<p>休闲娱乐</p>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<h1><img src="images/web/bd_tub9.png"></h1>
+				<p>生活服务</p>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<h1><img src="images/web/bd_tub10.png"></h1>
+				<p>全部分类</p>
+			</a>
+		</li>
+	</ul>
+</div>
+
+<div class="bdsh_neir_k shouru_mxi"> 
+	<h2 class="bdsh_bt">美食</h2>
+	<ul class="ul_mx">
+		<li>
+			<a href="#">
+				<h1><img src="images/web/mis1.jpg"></h1>
+				<div class="zhong_wenz">
+					<p>四季缤纷水果套餐</p>
+					<span>送鲜榨果汁两杯</span>
+				</div>
+			</a>
+			<div class="mx">
+				<P>48.90</P>
+				<h2>门面价</h2>
+ 				<h2 class="color">78.90</h2>
+			</div>
+		</li>
+		<li>
+			<a href="#">
+				<h1><img src="images/web/mis2.jpg"></h1>
+				<div class="zhong_wenz">
+					<p>意式烤肉</p>
+					<span>鲜嫩可口</span>
+				</div>
+			</a>
+			<div class="mx">
+				<P>¥59.90</P>
+				<h2>门面价</h2>
+ 				<h2 class="color">¥89.90</h2>
+			</div>
+		</li>
+		<li>
+			<a href="#">
+				<h1><img src="images/web/mis3.jpg"></h1>
+				<div class="zhong_wenz">
+					<p>鲤鱼跃龙门</p>
+					<span>爆款，爆！爆！爆！</span>
+				</div>
+			</a>
+			<div class="mx">
+				<P>¥78.90</P>
+				<h2>门面价</h2>
+ 				<h2 class="color">¥108.90</h2>
+			</div>
+		</li>
+		<li>
+			<a href="#">
+				<h1><img src="images/web/mis1.jpg"></h1>
+				<div class="zhong_wenz">
+					<p>四季缤纷水果套餐</p>
+					<span>送鲜榨果汁两杯</span>
+				</div>
+			</a>
+			<div class="mx">
+				<P>48.90</P>
+				<h2>门面价</h2>
+				<h2 class="color">78.90</h2>
+			</div>
+		</li>
+		<li>
+			<a href="#">
+				<h1><img src="images/web/mis2.jpg"></h1>
+				<div class="zhong_wenz">
+					<p>意式烤肉</p>
+					<span>鲜嫩可口</span>
+				</div>
+			</a>
+			<div class="mx">
+				<P>¥59.90</P>
+				<h2>门面价</h2>
+				<h2 class="color">¥89.90</h2>
+			</div>
+		</li>
+		<li>
+			<a href="#">
+				<h1><img src="images/web/mis3.jpg"></h1>
+				<div class="zhong_wenz">
+					<p>鲤鱼跃龙门</p>
+					<span>爆款，爆！爆！爆！</span>
+				</div>
+			</a>
+			<div class="mx">
+				<P>¥78.90</P>
+				<h2>门面价</h2>
+				<h2 class="color">¥108.90</h2>
+			</div>
+		</li>
+	</ul>
+	<div class="ckqb_ger"><a href="#">查看全部</a></div>
+</div>
+<div class="bdsh_neir_k shouru_mxi"> 
+	<h2 class="bdsh_bt">生活服务</h2>
+	<ul class="ul_mx">
+		<li>
+			<a href="#">
+				<h1><img src="images/web/meij1.jpg"></h1>
+				<div class="zhong_wenz">
+					<p>百花湾</p>
+					<span>花香四溢</span>
+				</div>
+			</a>
+			<div class="mx">
+				<P>¥78.90</P>
+				<h2>门票</h2>
+ 				<h2 class="color">¥128.90</h2>
+			</div>
+		</li>
+		<li>
+			<a href="#">
+				<h1><img src="images/web/meij2.jpg"></h1>
+				<div class="zhong_wenz">
+					<p>绿林山庄</p>
+					<span>WiFi免费</span>
+				</div>
+			</a>
+			<div class="mx">
+				<P>¥135.90</P>
+				<h2>门票</h2>
+ 				<h2 class="color">¥159.90</h2>
+			</div>
+		</li>
+		<li>
+			<a href="#">
+				<h1><img src="images/web/meij3.jpg"></h1>
+				<div class="zhong_wenz">
+					<p>水上乐园</p>
+					<span>游船</span>
+				</div>
+			</a>
+			<div class="mx">
+				<P>¥100.00</P>
+				<h2>门票</h2>
+ 				<h2 class="color">¥159.90</h2>
+			</div>
+		</li>
+		<li>
+			<a href="#">
+				<h1><img src="images/web/meij4.jpg"></h1>
+				<div class="zhong_wenz">
+					<p>汉庭大酒店</p>
+					<span>WiFi 无早</span>
+				</div>
+			</a>
+			<div class="mx">
+				<P>¥335.90</P>
+				<h2>一晚</h2>
+ 				<h2 class="color">¥359.90</h2>
+			</div>
+		</li>
+		<li>
+			<a href="#">
+				<h1><img src="images/web/meij1.jpg"></h1>
+				<div class="zhong_wenz">
+					<p>百花湾</p>
+					<span>花香四溢</span>
+				</div>
+			</a>
+			<div class="mx">
+				<P>¥78.90</P>
+				<h2>门票</h2>
+				<h2 class="color">¥128.90</h2>
+			</div>
+		</li>
+		<li>
+			<a href="#">
+				<h1><img src="images/web/meij2.jpg"></h1>
+				<div class="zhong_wenz">
+					<p>绿林山庄</p>
+					<span>WiFi免费</span>
+				</div>
+			</a>
+			<div class="mx">
+				<P>¥135.90</P>
+				<h2>门票</h2>
+				<h2 class="color">¥159.90</h2>
+			</div>
+		</li>
+	</ul>
+	<div class="ckqb_ger"><a href="#">查看全部</a></div>
+</div>
+
+<!--底部--> 
+
+<div class="dib_bj">
+	 
+	<div class="liange_bb">
+		<div class="bb">
+			<a href="#">
+				<div class="bb_img"><img src="images/web/chupb.png"></div>
+				<p>触屏版</p>
+			</a>
+		</div>
+		<div class="bb">
+			<a href="#">
+				<div class="bb_img"><img src="images/web/diannb.png"></div>
+				<p class="diann_color">电脑版</p>
+			</a>
+		</div>
+	</div> 
+	<div class="gs_beian">
+		<p>京公网安备：11010602030054号</p>
+		<p>京ICP备：14012449号 黔ICP证：B2-20140009号</p>
+	</div>
+</div>
+
+<!--底部导航-->
+<!---->
+ 
+<!--大框div
+</div>-->
+
+<!--搜索页面--> 
+</body>
+</html>
+
+<script type="text/javascript">
+	window.onload=function(){ 
+		var TheMenu=document.getElementById('zhu_caid');
+		var LieBiao=document.getElementById('daoh_lb'); 
+		var Html=document.getElementsByTagName("html")[0];//0 第一个数组
+		TheMenu.onclick=function(event)
+		{
+			if (LieBiao.style.display=='block')
+			{
+				LieBiao.style.display='none';
+			}
+			else {
+				LieBiao.style.display='block';
+			}  
+			event.stopPropagation();//阻止冒泡事件
+		} 
+		Html.onclick=function(){
+			LieBiao.style.display='none';
+		}
+ };
+ 
+</script>
